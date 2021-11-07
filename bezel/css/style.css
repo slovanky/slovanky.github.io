@@ -1,0 +1,176 @@
+
+/* ---------- General -------------------- */
+
+body { font-family: 'Source Sans Pro', sans-serif; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+
+.sec-title h2 { font-size: 38px; font-weight: 700; position: relative; }
+.sec-title p { font-size: 18px; color: #787878; }
+
+.sec-title h2::before {
+  opacity: .07;
+  width: 100%; position: absolute; bottom: -0.5rem; left: 0;
+  font-size: 74px; text-align: center;
+}
+.sec-title-left h2::before { text-align: left; left: -0.5rem; }
+
+@media only screen and (max-width: 991px) {
+  .sec-title h2 { font-size: 32px; }
+}
+
+/* ---------- Navbar -------------------- */
+
+.navbar-light .navbar-nav .nav-link {
+  padding-right: 15px; padding-left: 15px;
+  font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 500; color: #000;
+}
+
+
+/* ---------- Heder -------------------- */
+
+header { height: 100vh; }
+
+header .carousel-item .ovrly { background-color: rgba(0, 0, 0, 0.5); }
+
+header .carousel-caption-container {
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+header .carousel-caption {
+  height: auto;
+  top: auto; left: auto; bottom: auto; right: auto;
+}
+
+header .carousel .carousel-item img { height: 100vh; }
+
+header .carousel-caption h1 { font-size: 100px; font-weight: 700; }
+header .carousel-caption h4 { font-size: 18px; font-weight: 400; }
+header .carousel-caption button { font-size: 14px; font-weight: 600; }
+
+@media only screen and (max-width: 991px) {
+  header .carousel-caption h1 { font-size: 50px; }
+}
+
+
+
+header .carousel-control-prev, header .carousel-control-next {
+  width: 50px; height: 50px;
+  z-index: 11;
+  left: 0;
+  border: 1px solid #fff;
+}
+
+header .carousel-control-prev { top: 200px; }
+header .carousel-control-next { top: 250px; }
+
+
+/* ---------- About -------------------- */
+
+#about h6 { font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 500; text-transform: uppercase; }
+#about p { font-size: 24px; font-weight: 300; }
+#about p span { color: #00c3da; }
+#about button {
+  font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.05rem;
+}
+
+
+/* ---------- Team -------------------- */
+
+#team .sec-title h2::before { content: "C"; }
+
+#team .item { overflow: hidden; }
+
+#team .item .content {
+  width: 100%; height: 100%;
+  opacity: 0;
+  top: 1.5rem; left: 0;
+  background-color: rgba(0, 195, 218, 0.9);
+
+  transition: all .5s;
+}
+
+#team .item:hover .content {
+  opacity: 1; top: 0;
+}
+
+#team .item .content .info { bottom: 0; }
+#team .item .content .info h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; }
+#team .item .content .info p { font-family: 'Poppins', sans-serif; font-size: 12px; text-transform: uppercase; }
+
+
+/* ---------- Services -------------------- */
+
+#services .services-main-list ion-icon { font-size: 74px; }
+#services .services-main-list h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; }
+
+#services .sec-title h2::before { content: "W"; }
+#services .sec-title p { font-size: 16px; color: #fff; }
+
+#services .services-list li { font-size: 16px; }
+#services .services-list ion-icon { vertical-align: text-bottom; }
+
+
+/* ---------- Pricing -------------------- */
+
+#pricing .sec-title h2::before { content: "C"; }
+
+#pricing .item p { font-family: 'Poppins', sans-serif; font-size: 13px; }
+#pricing .item p span { font-size: 9px; font-weight: 500; text-transform: uppercase }
+#pricing .item h2 { font-size: 55px; font-weight: 500; }
+
+#pricing .item h2::before {
+  content: "$";
+  width: 100%; position: absolute; top: 0; left: 0;
+  font-size: 18px; text-align: left;
+}
+
+#pricing .featured { transform: scale(1.08); }
+
+@media (max-width: 1200px) {
+  #pricing .featured { transform: scale(1); }
+}
+
+
+/* ---------- Testimonials -------------------- */
+
+#testi .container > h5 { font-size: 13px; font-weight: 500; text-transform: uppercase; }
+
+#testi .testi-item img {
+  width: 100px; height: auto; display: block; margin: 0 auto -3rem auto;
+}
+
+#testi .testi-content h4 { font-family: 'Poppins', sans-serif; font-size: 25px; font-weight: 700; }
+#testi .testi-content span { font-family: 'Poppins', sans-serif;font-size: 12px; font-weight: 500; color: #787878; text-transform: uppercase; }
+#testi .testi-content p { font-size: 18px; font-weight: 300; color: #787878; }
+
+#testi .carousel-indicators {
+  position: static; top: none; right: none; bottom: none; left: none;
+}
+#testi ol li {
+  width: 10px; height: 10px; margin: 10px 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+#testi ol .active { background-color: #00c3da; }
+
+#testi .carousel-control-next, #testi .carousel-control-prev { font-size: 2rem; color: #000; }
+
+
+/* ---------- Contact -------------------- */
+
+#contact .location-map {
+  height: 100%; margin: 0; padding: 0;
+  top: 0; left: 0;
+}
+
+#contact .sec-title h2::before { content: "G"; }
+
+#contact form label { font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 500; }
+#contact form button { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600; }
+
+
+
+
